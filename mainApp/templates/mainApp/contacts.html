@@ -1,0 +1,64 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block content %}
+	<div class="full_center">
+		
+		{% load staticfiles %}
+		
+			<div id="holder">
+				<div id="foto">
+					<img src="{% static 'mainApp/image/Alex.jpg' %}" />
+				</div>
+					<div id="describe">
+						<p>CTO & Backend Developer<br />
+						Alex Sivkov</p>
+					</div>
+			</div>
+				
+			<div id="holder">
+				<div id="foto">
+					<img src="{% static 'mainApp/image/Nick.jpg' %}" />
+				</div>
+					<div id="describe">
+						<p>Owner and Android Developer<br />
+						Nick Sherbina</p>
+					</div>
+			</div>
+				
+			<div id="holder">
+				<div id="foto">
+					<img src="{% static 'mainApp/image/Vlad.jpg' %}" />
+				</div>
+					<div id="describe">
+						<p>Content Director & Python Developer<br />
+						Vlad Tretiakov</p>
+					</div>
+			</div>
+			
+			<br />
+			<div id="private_policy">
+				<pre>
+			<strong>Отзывы, ошибки и пожелания:</strong>
+	Если у Вас есть вопросы, вы хотите оставить отзыв, или выразить 
+пожелания, обнаружили ошибку/баг используйте любой из удобных Вам способов:
+		- Напишите нам на почту: <strong><i>memasikapp@gmail.com</i></strong>;
+		- Оставьте отзыв в appstore: <a href="https://play.google.com/store/apps/details?id=com.nick.memasik" 
+		>по этой ссылке</a>;
+	Ваше мнение, очень важно для нас. Составляя отзыв/пожелания/сообщения 
+об ошибках, нет необходимости придерживаться каких либо форм, пишите
+коротко,просто и лаконично :3
+	Ваши пожелания будут обязательно учтены, а ошибки и баги
+исправлены в ближайших обновлениях.
+
+			<strong>Отказ от ответственности:</strong>
+	Пользователи возлагают на себя всю ответственность за использование контента
+в нашем приложении. Шаблоны, картинки, стикеры которые предоставляются 
+приложением, общедоступные и взяты в сети интернет. Все созданные мемы, 
+картинки, стикеры и надписи к ним не являются выражением мнения и точки зрения 
+команды MEMASIK. Если какое-то изображение оскорбляет ваши чувства, 
+сообщите нам об этом.
+				</pre>
+			</div>
+			
+	</div>
+{% endblock %}

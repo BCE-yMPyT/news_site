@@ -1,8 +1,138 @@
 {% extends "mainApp/wrapper.html" %}
 
 {% block content %}
-<p>Проверка страницы</p>
+<div class="full_center">
+	<br />
 
-{% include "mainApp/includes/some_html.html" %}
+		{% load staticfiles %}	
+		
+		<div class="owl-carousel owl-theme owl-loaded">
+		
+		    <div class="owl-stage-outer">
+		        <div class="owl-stage">
+		            <div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+					<div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+		            <div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+		            <div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+					<div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+					<div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+					<div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+					<div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+					<div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+					<div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+					<div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+					<div class="owl-item"><img src="{% static 'home/images/206.png' %}" /></div>
+					
+		        </div>
+		    </div>
+			
+				<script src="{% static 'js/jquery.min.js' %}"></script>
+				<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+				<script>
+					$(document).ready(function(){
+					  $(".owl-carousel").owlCarousel({
+			    loop:true,
+			    margin:10,
+			    nav:true,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:3
+			        },
+			        1000:{
+			            items:5
+			        }
+			    }
+			});
+					});
+				</script>
+		</div>
+		
+	<br />
+			<div id="site_description">
+		<pre>
+Вам знакомы ситуацци когда под рукой не оказалось нужного мема?
+Думали ли Вы ранее о том что бы под рукой были все мемчики?
+Как бы сделать мем о своём друге/подруге?
+Хотелось ли Вам пилить мемы прямо со своего андроид устройства?
+А может делится своими шедеврами Ваше призвание?
 
+	Если хотябы один вопрос заставил Вас задуматься, тогда - добро 
+пожаловать! На этом сайте Мы познакомим Вас с приложением,
+которое поможет справится со всем этим! 
+Позвольте представить Вашему вниманию - Мемасик. 
+Простое приложение которое открывает огромное количество 
+возможностей, от простой подписи популярного мема, до создания
+своего кастомного мемчика :D
+
+В арсенал приложения входят:
+	- большая база с мемами, которая регулярно обновляется;
+	- популярные и классические мемы;
+	- тематические стикеры;
+	- удобное удаление элементов;
+	- возможность вставлять много текста;
+	- удобное расположение текста;
+	- быстрая загрузка в популярные соцсети;
+	- удобное сохранение;
+	- интуитивный и удобный интерфейс;
+	- удобная обрезка;
+	- карандаш;
+	- возможность загружать свои картинки/фото/мемы/стикеры;
+	- работа приложения оффлайн;
+
+	Подробности пользования приложением, а так же небольшой 
+гайд, Вы можете	лицезреть на соответствующих видеозаписях, дабы
+убедится в его простоте и удобствах. Чтобы не пропустить интересные
+вещи, Мы добавили раздел новостей, за которыми Вы сможете
+следить, и быть в курсе всех обновлений :3
+
+	В обновлённой версии мемасика с новыми инструментами, 
+время и трудозатраты  на создание мема, сократились примерно на 45%.
+Учитывая опыт и тенденции, наша команда стремится к всестороннему
+улучшению и развитию продукта, поэтому мы следим за отзывами
+в appstore, а так же поддерживаем обратную связь с пользователями. 
+	И если у Вас есть вопросы/замечания или предложения, Вы можете
+оставить их в appstore, либо написать на Наш email, который можете 
+найти в разделе контакты.
+		</pre>
+			</div>
+		
+		<video id="party" width="390" height="300" autoplay
+		poster="{% static 'home/videos/party.png' %}" preload="none" mute loop>
+		<source src="{% static 'home/videos/party.mp4' %}"></source>
+		</video>
+		
+		<video id="about_cat" width="390" height="300" controls
+		poster="{% static 'home/videos/about_cat.png' %}" preload="none">
+		<source src="{% static 'home/videos/about_cat.mp4' %}"></source>
+		</video>
+			
+		<video id="music" width="390" height="300" controls 
+		poster="{% static 'home/videos/mus.png' %}" preload="none">
+		<source src="{% static 'home/videos/music.mp4' %}"></source>
+		</video>
+			
+</div>
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
