@@ -19,11 +19,11 @@
 <body>
 	
 		<header>
-			<img src="{% static 'mainApp/image/logo_s.jpg' %}" />
+			<a href="/" ><img src="{% static 'mainApp/image/logo_s.jpg' %}" /></a>
 			MEMASIK
 		<span class="right">
-				<a href="https://play.google.com/store/apps/details?id=com.nick.memasik" 
-				class="btn btn-success btn-lg">GET APP</a>
+				<a href="https://play.google.com/store/apps/details?id=com.nick.memasik">
+				<img id="for_appstore" src="{% static 'mainApp/image/oggo.png' %}" /></a>
 				<a href="/" class="btn btn-primary btn-lg">Главная страница</a>
 				<a href="/news" class="btn btn-primary btn-lg">Новости</a>
 				<a href="/contact" class="btn btn-primary btn-lg">Контакты</a>
@@ -36,7 +36,7 @@
 			</div>
 			
 		<footer class="left">
-		<img src="{% static 'mainApp/image/logo_s.jpg' %}" />
+		<a href="/" ><img src="{% static 'mainApp/image/logo_s.jpg' %}" /></a>
 		MEMASIK
 		<p id="footer_stuff">&copy; Все права защищены 2018</p>
 		</footer>

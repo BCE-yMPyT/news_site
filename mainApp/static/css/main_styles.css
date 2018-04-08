@@ -10,13 +10,13 @@
 .clear {clear: both}
 .full_center {
 	width: 100%;
-	background: #E3DDE0;
+	background: #F3F1EE;
 	float: left;
 	min-height: calc(100vh - 130px);
 }
 
 html {
-	background: #E3DDE0;
+	background: #F3F1EE;
 	height: 100%;
 }
 
@@ -119,8 +119,10 @@ video {
 	font-size: 1.2em;
 }
 
-
-
+#for_appstore {
+	height: 48px;
+	margin-top: 10px;
+}
 
 
 
